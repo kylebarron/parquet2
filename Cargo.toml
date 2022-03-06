@@ -23,7 +23,7 @@ snap = { version = "^1.0", optional = true }
 brotli = { version = "^3.3", optional = true }
 flate2 = { version = "^1.0", optional = true }
 lz4 = { version = "^1.23", optional = true }
-zstd = { git = "https://github.com/gyscos/zstd-rs", rev = "9334ec7a3edbbe8cce003be36ecb92021cf8030e", optional = true }
+zstd = { git = "https://github.com/gyscos/zstd-rs", rev = "9334ec7a3edbbe8cce003be36ecb92021cf8030e", default-features = false, optional = true }
 
 [features]
 default = ["snappy", "gzip", "zstd", "brotli", "stream"]
